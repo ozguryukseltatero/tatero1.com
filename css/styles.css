@@ -11066,8 +11066,8 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ekranın tamamını kaplar */
-  background-color: #000; /* Arka plan rengi */
+  height: 100vh;
+  background-color: #000;
 }
 
 .masthead .container {
@@ -11075,7 +11075,7 @@ body {
 }
 
 .masthead .row {
-  height: 100%; /* Satırı yüksekliği */
+  height: 100%;
 }
 
 .masthead .col-lg-6 {
@@ -11085,44 +11085,50 @@ body {
 .masthead img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Resmi orantılı olarak büyütür ve keser */
+  object-fit: cover;
 }
 
 .masthead .text-center {
-  padding: 2rem; /* Yazıların iç boşluğu */
+  padding: 2rem;
 }
 
 .masthead h1 {
-  font-size: 3.5rem; /* Başlık font boyutu */
-  color: #fff; /* Yazı rengi */
+  font-size: 2rem; /* Düzenlenebilir: Yazının sığmasını sağlamak için burada oynamalar yapabilirsiniz */
+  color: #fff;
+  word-wrap: break-word; /* Yazının sığmamasını engelle */
 }
 
 .masthead h2 {
-  font-size: 1.5rem; /* Alt başlık font boyutu */
-  color: #ccc; /* Yazı rengi */
+  font-size: 1rem; /* Düzenlenebilir: Alt başlık font boyutu */
+  color: #ccc;
 }
 
 @media (min-width: 768px) {
-  .masthead h1, .masthead .h1 {
+  .masthead h1,
+  .masthead .h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
   }
-  .masthead h1, .masthead .h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 3rem;
+    line-height: 3rem;
     letter-spacing: 0.8rem;
   }
-  .masthead h2, .masthead .h2 {
+  .masthead h2,
+  .masthead .h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
 }
+
 
 .about-section {
   padding-top: 10rem;
