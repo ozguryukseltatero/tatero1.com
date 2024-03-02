@@ -11106,9 +11106,16 @@ body {
 @media (min-width: 768px) {
   .masthead h1,
   .masthead .h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+
+    font-size: 2rem; /* Telefon düzeninde h1 boyutu */
+    line-height: rem;
   }
+  .masthead h2,
+  .masthead .h2 {
+    font-size: 1rem; /* Telefon düzeninde h2 boyutu */
+  }
+  
+  
 }
 
 @media (min-width: 992px) {
@@ -11127,6 +11134,8 @@ body {
     max-width: 30rem;
     font-size: 1.25rem;
   }
+  
+
 }
 
 
